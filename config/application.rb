@@ -16,6 +16,6 @@ module DipakPanchal
     # -- all .rb files in that directory are automatically loaded.
     config.active_record.raise_in_transactional_callbacks = true
     config.serve_static_assets = true
-    config.action_dispatch.rack_cache = true
+    # config.action_dispatch.rack_cache = true
   end
 end
