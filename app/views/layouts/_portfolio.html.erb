@@ -1,0 +1,69 @@
+<section id='portfolio'>
+  <div id='portfolio-header' class='text-center'>
+    <h1 class='section-title scrollimation scale-in'>
+      The <span>works</span> I am proud of<i class='fa fa-pencil'></i>
+    </h1>
+    <!--==== Portfolio Filters ====-->
+    <div id='filter-works'>
+      <ul>
+        <li class='active'><a href='#' data-filter='*'>All</a></li>
+        <li><a href='#' data-filter='.frontend'>FrontEnd</a></li>
+        <li><a href='#' data-filter='.backend'>BackEnd</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class='container masonry-wrapper scrollimation fade-in'>
+    <div id='projects-container' style='visibility: visible; position: relative; height: 681px; width: 1050px;' class='masonry'>
+      <!-- ==============================================
+        SINGLE PROJECT ITEM
+      =============================================== -->
+      <% Portfolio.all.order('position DESC').each do |portfolio| %>
+        <a class='project-item <%= portfolio.project_type %> masonry-brick' href="<%= portfolio.website.present? ? portfolio.website : 'javascript:void(0);' %>" data-images='<%= portfolio.thumbnail_path %>' style='position: absolute; top: 0px; left: 0px;'>
+          <%= image_tag(portfolio.thumb, class: 'img-responsive project-image', alt: 'Thumb Image') %>
+          <div class='hover-mask'>
+            <h2 class='project-title'><%= portfolio.try(:name) %></h2>
+            <p><%= portfolio.try(:website) %></p>
+          </div>
+
+          <!--==== Project Preview HTML ====-->
+          <div class='sr-only project-description'>
+            <%= portfolio.description.html_safe %>
+            <%= portfolio.description2.html_safe %>
+            <%= image_tag(portfolio.image_path, class: 'img-responsive img-center', alt: 'Full Image') %>
+            <p class='text-center'>
+              <%- portfolio.keywords.split(',').each do |keyword| %>
+                <button type='button' class='btn btn-pill btn-info'><%= keyword %></button>
+              <% end %>
+            </p>
+          </div>
+        </a>
+      <% end %>
+    </div>
+  </div>
+  <!-- ==============================================
+    PROJECT PREVIEW MODAL
+  =============================================== -->
+  <div id='project-modal' class='modal fade'>
+    <div class='modal-dialog'>
+      <div class='modal-content'>
+        <div class='modal-header'>
+          <button type='button' class='close' data-dismiss='modal' aria-hidden='true'>×</button>
+        </div>
+        <div class='modal-body'>
+          <div class='left-col'>
+            <img class='img-responsive' src='/assets/imac.png' alt=''>
+            <div class='loader'></div>
+            <div class='image-wrapper'></div>
+          </div>
+          <h1></h1>
+          <div class='project-descr'></div>
+          <div class='clearfix'></div>
+          <p class='text-center'>
+            <a class='btn btn-theme' target="_blank"><i class='fa fa-external-link'></i>Visit Website</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

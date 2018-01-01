@@ -1,0 +1,43 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ * require_tree .
+ *= require bootstrap.css
+ *= require flexslider.css
+ *= require font-awesome
+ *= require font-awesome.css
+ *= require designr-theme-cyan2.css
+ *= require style-switcher.css
+ *= require css.css
+ *= require bootstrap/bootstrap-rails-popover
+ *= require_self
+ */
+
+.skills  .skfont{
+  color: #228Ca8;
+  font-size: 19px;
+  font-weight: 300;
+  margin-top: 50px;
+}
+.skills button{
+  margin-top: 5px;
+  font-size: 16px;
+}
+.extraSpace{
+  margin-bottom: 10%;
+}
+.modal-body h1{
+  margin: 100px 0 24px;
+}
+.fntnor{
+  font-weight: 300;
+}
