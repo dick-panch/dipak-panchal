@@ -17,5 +17,6 @@ module DipakPanchal
     config.active_record.raise_in_transactional_callbacks = true
     config.serve_static_assets = true
     # config.action_dispatch.rack_cache = true
+    config.middleware.insert_before ActionDispatch::Static, Rack::Deflater
   end
 end

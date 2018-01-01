@@ -56,8 +56,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "font-awesome-rails"
 # gem 'heroku-deflater', group: :production
-gem 'heroku_rails_deflate', group: :production
-gem 'rails_critical_css_server'
+# gem 'heroku_rails_deflate', group: :production
+# gem 'rails_critical_css_server'
 
 # For Pop Over
 gem 'bootstrap-popover-rails'
