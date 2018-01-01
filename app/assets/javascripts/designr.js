@@ -244,7 +244,7 @@ $(document).ready(function() {
     $('.backstretch').remove();
 
     if (direction=='down'){
-      $.backstretch('contact-bg.jpg');
+      $.backstretch('/assets/contact-bg.jpg');
     }else{
       $.backstretch('/assets/header-bg.jpg');
     }
