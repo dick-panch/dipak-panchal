@@ -15,9 +15,9 @@ module DipakPanchal
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
     # config.active_record.raise_in_transactional_callbacks = true
-    config.serve_static_assets = true
+    # config.serve_static_assets = true
     # config.action_dispatch.rack_cache = true
-    config.middleware.insert_before ActionDispatch::Static, Rack::Deflater
-    config.assets.initialize_on_precompile = false
+    # config.middleware.insert_before ActionDispatch::Static, Rack::Deflater
+    # config.assets.initialize_on_precompile = false
   end
 end
