@@ -18,5 +18,6 @@ module DipakPanchal
     config.serve_static_assets = true
     # config.action_dispatch.rack_cache = true
     config.middleware.insert_before ActionDispatch::Static, Rack::Deflater
+    config.assets.initialize_on_precompile = false
   end
 end
