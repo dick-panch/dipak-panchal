@@ -38,7 +38,9 @@
     <!-- ==============================================
     CSS
     =============================================== -->
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true , async: true, cache: true %>
+    <%= RailsCriticalCssServer::Rewrite.call self do %>
+        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true , async: true, cache: true %>
+    <% end %>
     <%= csrf_meta_tags %>
     <!-- ==============================================
     JS
