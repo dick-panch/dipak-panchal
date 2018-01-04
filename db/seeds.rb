@@ -144,3 +144,53 @@ unless portfolio9.present?
   })
 end
 
+# -------- Portfolio 10  -----------------
+portfolio10 = Portfolio.find_by(name: 'Theedoc Backend')
+unless portfolio10.present?
+  Portfolio.create({
+    name: 'Theedoc Backend',
+    project_type: 'backend',
+    website: 'https://thedoc.herokuapp.com',
+    image_path: '/assets/portfolio/api.png',
+    thumbnail_path: '/assets/thumbnail/api.jpg',
+    description: "<p class='clearfix'>This is Ruby API with Postgres DB for storing necessary data. <b> Login : </b> User can login (or create account if he does not have one) via standard email form or gmail (OAuth). </p>",
+    keywords: 'Ruby on Rails, PostgreSQL, Heroku, RSpec Testing',
+    description2: "<p>
+        <b> User </b> <br>
+        User can create projects (up to 5 - `configurable`, then he is project owner) and add other user to projects (up to 4 - `configurable`, other users are Developers).
+        <br> User is defined with:
+        <li>Firstname</li>
+        <li>Lastname</li>
+        <li>Email</li>
+        <br>
+        </p>
+        <p>
+        <b> Project </b> <br>
+        Project is a list of topics. Project is defined with:
+        <li>Name</li>
+        <li>Owner</li>
+        <li>Developers</li>
+        <li>Topics</li>
+        <br>
+        </p>
+        <p>
+        <b> Topics </b> <br>
+        Topic is a list of Paragraphs.
+        Topic can be shared between projects.
+        Topic is defined with:
+        <li>Name</li>
+        <li>Paragraphs</li>
+        <br>
+        </p>
+        <p>
+        <b> Paragraph </b> <br>
+        Paragraph can be LinkParagraph and StringParagraph.
+        Paragraph is defined with:
+        <li>Name</li>
+        <li>Type</li>
+        <li>Text</li>
+        </p>",
+    position: 10
+  })
+end
+
