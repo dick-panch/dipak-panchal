@@ -41,6 +41,9 @@
 .fntnor{
   font-weight: 300;
 }
+.font20{
+  font-size: 20px;
+}
 
 /* Testimonial */
 
@@ -92,4 +95,7 @@
 }
 blockquote .small, blockquote footer, blockquote small{
 	color: black;
+}
+.carousel-inner{
+  min-height: 150px;
 }
