@@ -41,7 +41,7 @@
 .fntnor{
   font-weight: 300;
 }
-.font20{
+.font20, #about p{
   font-size: 20px;
 }
 
