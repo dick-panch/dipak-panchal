@@ -99,3 +99,13 @@ blockquote .small, blockquote footer, blockquote small{
 .carousel-inner{
   min-height: 150px;
 }
+.dblock{
+  display: block;
+}
+.mySlider{
+  height: 1000%;
+  position: absolute;
+  width: 100%;
+  transition-duration: 0s;
+  transform: translate3d(0px, -130px, 0px);
+}
