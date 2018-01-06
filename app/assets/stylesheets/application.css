@@ -109,3 +109,22 @@ blockquote .small, blockquote footer, blockquote small{
   transition-duration: 0s;
   transform: translate3d(0px, -130px, 0px);
 }
+#main-footer .right-col h6 {
+  text-transform: none;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  margin: 0 0 24px;
+}
+
+.services h6 {
+  margin: 0;
+  margin-bottom: 0px;
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.project-item .hover-mask .project-title {
+  text-transform: uppercase;
+}

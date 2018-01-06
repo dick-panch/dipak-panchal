@@ -22,7 +22,7 @@
         <a class='project-item <%= portfolio.project_type %> masonry-brick' href="<%= portfolio.website.present? ? portfolio.website : 'javascript:void(0);' %>" data-images='<%= portfolio.thumbnail_path %>' style='position: absolute; top: 0px; left: 0px;'>
           <%= image_tag(portfolio.thumb, class: 'img-responsive project-image', alt: 'Thumb Image') %>
           <div class='hover-mask'>
-            <h2 class='project-title'><%= portfolio.try(:name) %></h2>
+            <h6 class='project-title'><%= portfolio.try(:name) %></h6>
             <p><%= portfolio.try(:website) %></p>
           </div>
 
