@@ -61,3 +61,5 @@ gem 'rails_critical_css_server'
 
 # For Pop Over
 gem 'bootstrap-popover-rails'
+gem 'rack-cors', require: 'rack/cors'
+
