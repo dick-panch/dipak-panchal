@@ -54,6 +54,8 @@ module ApplicationHelper
       content = "Git is a version control system for tracking changes in computer files and coordinating work on those files among multiple people. It is primarily used for source code management in software development, but it can be used to keep track of changes in any set of files."
     when '26'
       content = "Cascading Style Sheets (CSS) is a style sheet language used to describe the presentation (that is, the look and formatting) of a document written in a markup language."
+    when '27'
+      content = "Haml (HTML Abstraction Markup Language) is a templating system that is designed to avoid writing inline code in a web document and make the HTML easy and clean. Haml gives the flexibility to have some dynamic content in HTML."
     else
       content = "Comming Soon...."
     end
