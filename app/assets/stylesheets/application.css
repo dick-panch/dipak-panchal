@@ -128,3 +128,12 @@ blockquote .small, blockquote footer, blockquote small{
 .project-item .hover-mask .project-title {
   text-transform: uppercase;
 }
+#home .hgt951{
+  height: 951px;
+}
+#home .mrtop360{
+  margin-top: 360.4px;
+}
+#home .zindex1{
+  z-index:1;
+}
