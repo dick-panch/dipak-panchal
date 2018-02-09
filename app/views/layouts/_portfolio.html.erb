@@ -18,7 +18,7 @@
       <!-- ==============================================
         SINGLE PROJECT ITEM
       =============================================== -->
-      <% Portfolio.all.order('position DESC').each do |portfolio| %>
+      <% Portfolio.active.order('position DESC').each do |portfolio| %>
         <a class='project-item <%= portfolio.project_type %> masonry-brick' href="<%= portfolio.website.present? ? portfolio.website : 'javascript:void(0);' %>" data-images='<%= portfolio.thumbnail_path %>' style='position: absolute; top: 0px; left: 0px;'>
           <%= image_tag(portfolio.thumb, class: 'img-responsive project-image', alt: 'Thumb Image') %>
           <div class='hover-mask'>
